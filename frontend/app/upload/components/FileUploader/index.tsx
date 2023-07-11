@@ -30,13 +30,13 @@ export const FileUploader = (): JSX.Element => {
             <input {...getInputProps()} />
             <div className="text-center p-6 max-w-sm w-full flex flex-col gap-5 items-center">
               {isDragActive ? (
-                <p className="text-blue-600">Drop the files here...</p>
+                <p className="text-blue-600">Kéo thả file của bạn vào đây...</p>
               ) : (
                 <button
                   onClick={open}
                   className="opacity-50 h-full cursor-pointer hover:opacity-100 hover:underline transition-opacity"
                 >
-                  Drag and drop files here, or click to browse
+                  Kéo thả tài liệu vào đây, hoặc click vào để chọn tài liệu.
                 </button>
               )}
             </div>

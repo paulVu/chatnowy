@@ -19,7 +19,7 @@ export const ChatMessages = (): JSX.Element => {
       <div className="flex-1">
         {history.length === 0 ? (
           <div className="text-center opacity-50">
-            Ask a question, or describe a task.
+            Hỏi bất cứ điều gì, hoặc yêu cầu thực hiện yêu cầu, như viết bài, lên kế hoạch, hướng dẫn...
           </div>
         ) : (
           history.map(({ assistant, message_id, user_message }) => (

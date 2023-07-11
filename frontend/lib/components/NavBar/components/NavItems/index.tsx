@@ -35,22 +35,22 @@ export const NavItems = ({
       {isUserLoggedIn ? (
         <>
           <NavLink setOpen={setOpen} to="/upload">
-            Upload
+            Tải lên
           </NavLink>
           <NavLink setOpen={setOpen} to="/chat">
             Chat
           </NavLink>
           <NavLink setOpen={setOpen} to="/explore">
-            Explore
+            Thư viện
           </NavLink>
         </>
       ) : (
         <>
-          <NavLink setOpen={setOpen} to="https://github.com/StanGirard/quivr">
-            Github
+          <NavLink setOpen={setOpen} to="https://gianha.vn/about/">
+            Giới thiệu
           </NavLink>
-          <NavLink setOpen={setOpen} to="https://discord.gg/HUpRgp2HG8">
-            Discord
+          <NavLink setOpen={setOpen} to="https://www.facebook.com/gianhaco">
+            Liên hệ
           </NavLink>
         </>
       )}

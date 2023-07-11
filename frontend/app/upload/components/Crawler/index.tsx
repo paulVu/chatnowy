@@ -21,7 +21,7 @@ export const Crawler = (): JSX.Element => {
                   name="crawlurl"
                   ref={urlInputRef}
                   type="text"
-                  placeholder="Enter a website URL"
+                  placeholder="Nhập một đường dẫn website URL"
                   className="w-full"
                 />
               </div>
@@ -30,7 +30,7 @@ export const Crawler = (): JSX.Element => {
                   isLoading={isCrawling}
                   onClick={() => void crawlWebsite(currentBrain?.id)}
                 >
-                  Crawl
+                  Thu thập dữ liệu
                 </Button>
               </div>
             </Card>

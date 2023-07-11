@@ -77,7 +77,7 @@ export const useFileUploader = () => {
   const uploadAllFiles = async () => {
     if (files.length === 0) {
       publish({
-        text: "Please, add files to upload",
+        text: "Vui lòng chọn ít nhất 1 tài liệu để tải lên",
         variant: "warning",
       });
 
@@ -89,7 +89,7 @@ export const useFileUploader = () => {
       await Promise.all(files.map((file) => upload(file, currentBrain?.id)));
     } else {
       publish({
-        text: "Please, select or create a brain to upload a file",
+        text: "Vui lòng chọn Bot bạn muốn nạp dữ liệu trước khi tải lên",
         variant: "warning",
       });
     }

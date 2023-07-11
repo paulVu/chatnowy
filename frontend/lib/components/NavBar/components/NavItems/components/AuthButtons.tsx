@@ -9,20 +9,20 @@ export const AuthButtons = (): JSX.Element => {
   if (pathname === "/signup") {
     return (
       <Link href={"/login"}>
-        <Button variant={"secondary"}>Login</Button>
+        <Button variant={"secondary"}>Đăng nhập</Button>
       </Link>
     );
   }
   else if (pathname === "/login") {
     return (
       <Link href={"/signup"}>
-        <Button variant={"secondary"}>Sign up</Button>
+        <Button variant={"secondary"}>Tạo tài khoản</Button>
       </Link>
     )
   } else {
     return (
       <Link href={"/login"}>
-        <Button variant={"secondary"}>Login</Button>
+        <Button variant={"secondary"}>Đăng nhập</Button>
       </Link>
     );
   }

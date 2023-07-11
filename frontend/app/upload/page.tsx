@@ -13,8 +13,8 @@ const UploadPage = (): JSX.Element => {
   return (
     <main className="pt-10">
       <PageHeading
-        title="Upload Knowledge"
-        subtitle="Text, document, spreadsheet, presentation, audio, video, and URLs supported"
+        title="Tải dữ liệu lên thư viện"
+        subtitle="Bạn có thể tải dữ liệu dạng chứ, tài liệu doc, excel, slide, powerpoint, âm thanh, video, hay đường dẫn trang web."
       />
       <FileUploader />
       <Divider text="or" className="m-5" />

@@ -39,7 +39,7 @@ export const ChatInput = (): JSX.Element => {
           }
         }}
         className="w-full p-2 border border-gray-300 dark:border-gray-500 outline-none rounded dark:bg-gray-800"
-        placeholder="Begin conversation here..."
+        placeholder="Nhập nội dung ở đây..."
         data-testid="chat-input"
       />
       <Button

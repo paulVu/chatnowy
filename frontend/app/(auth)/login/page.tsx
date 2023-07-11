@@ -37,7 +37,7 @@ export default function Login() {
   return (
     <main>
       <section className="w-full min-h-[80vh] h-full outline-none flex flex-col gap-5 items-center justify-center p-6">
-        <PageHeading title="Login" subtitle="Welcome back" />
+        <PageHeading title="Đăng nhập" subtitle="Chào mừng bạn trở lại" />
         <Card className="max-w-md w-full p-5 sm:p-10 text-left">
           <form
             data-testid="sign-in-form"
@@ -47,6 +47,12 @@ export default function Login() {
             }}
             className="flex flex-col gap-2"
           >
+            <div className="flex flex-col items-center justify-center mt-2 gap-2">
+              <GoogleLoginButton />
+            </div>
+
+            <Divider text="or" />
+
             <Field
               name="email"
               required
@@ -61,24 +67,25 @@ export default function Login() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
+              placeholder="Mật khẩu"
             />
 
             <div className="flex flex-col items-center justify-center mt-2 gap-2">
               <Button type="submit" isLoading={isPending}>
-                Login
+                Đăng nhập
               </Button>
+              <MagicLinkLogin email={email} setEmail={setEmail} />
+              <Divider text="or" />
+              
               <PasswordForgotten setEmail={setEmail} email={email} />
 
-              <Link href="/signup">Don{"'"}t have an account? Sign up</Link>
+              <Link href="/signup">Bạn không có tài khoản? Vui lòng tạo tài khoản ở đây</Link>
             </div>
 
-            <Divider text="or" />
-            <div className="flex flex-col items-center justify-center mt-2 gap-2">
-              <GoogleLoginButton />
-            </div>
-            <Divider text="or" />
-            <MagicLinkLogin email={email} setEmail={setEmail} />
+            
+            
+            
+            
           </form>
         </Card>
       </section>

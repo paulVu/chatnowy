@@ -27,12 +27,12 @@ export const AddBrainModal = (): JSX.Element => {
     <Modal
       Trigger={
         <Button variant={"secondary"}>
-          Add New Brain
+          Thêm trợ lý mới
           <MdAdd className="text-xl" />
         </Button>
       }
-      title="Add Brain"
-      desc="Add a new brain"
+      title="Thêm trợ lý"
+      desc="Thêm trợ lý AI cho công ty của bạn"
     >
       <form
         onSubmit={(e) => void handleSubmit(e)}
@@ -40,9 +40,9 @@ export const AddBrainModal = (): JSX.Element => {
       >
         <Field
           name="brainname"
-          label="Enter a brain name"
+          label="Nhập tên trợ lý"
           autoFocus
-          placeholder="E.g. History notes"
+          placeholder="Vd trợ lý bán hàng"
           autoComplete="off"
           value={newBrainName}
           onChange={(e) => setNewBrainName(e.currentTarget.value)}

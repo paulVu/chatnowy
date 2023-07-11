@@ -40,16 +40,15 @@ const Hero = (): JSX.Element => {
         className="top-24 -z-0 flex flex-col gap-2 items-center justify-center pt-24"
       >
         <h1 className="text-5xl sm:text-7xl font-bold max-w-lg sm:max-w-xl">
-          Get a Second Brain with <span className="text-primary">Quivr</span>
+          Tạo AI assistant với <span className="text-primary">Chat Nowy</span>
         </h1>
         <p className="text-base max-w-sm text-gray-500 mb-5 sm:mb-10">
-          Quivr is your second brain in the cloud, designed to easily store and
-          retrieve unstructured information.
+          Chatnowy Là nền tảng giúp bạn tạo AI assistant cho công ty của bạn, Tạo doanh nghiệp AI dễ dàng, giúp nhân viên sử dụng AI với dữ liệu nội bộ để thực hiện công việc nhanh và dễ dàng.
         </p>
         <Link href={"/login"}>
-          <Button>Get Started</Button>
+          <Button>Bắt đầu</Button>
         </Link>
-        <Link target="_blank" href={"https://github.com/StanGirard/quivr/"}>
+        <Link target="_blank" href={"https://chatnowy.com"}>
           <Button variant={"tertiary"}>
             Github <MdNorthEast />
           </Button>

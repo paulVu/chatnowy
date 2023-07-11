@@ -34,7 +34,7 @@ export const ShareBrain = ({ brainId }: ShareBrainModalProps): JSX.Element => {
           <MdShare className="text-xl" />
         </Button>
       }
-      title="Share brain"
+      title="Chia sẻ trợ lý"
     >
       <div className="flex flex-row align-center my-5">
         <p>{brainShareLink}</p>
